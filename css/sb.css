@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  /*register */
+  #page-top{   
+    max-width: 500px;
+    margin: auto;
+  }
+h5{
+    font-size: larger;
+    padding-top: 0%;
+    text-align: center;
+}
+.model-body{
+    position: center;
+    width: 100%;
+}
+input{
+  width: 50%;
+  padding: 10px 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  border: 1px solid rgb(8, 8, 8);
+   border:none;
+   border-radius: 7px;
+}
+
+button{
+    width: 50;
+  padding: 10px 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid rgb(8, 8, 8);
+}
+#btn1{
+    background-color: #f44336;
+    
+}
+#btn2{
+    background-color: green;
+    color: aliceblue;
+}
+a{
+  color: white;
+}
+form{
+    border-radius: 10px;
+    background-color:#ECCDB4;
+    width:500px;
+    height:360px;
+    border:solid;
+    padding: 4px;
+    text-align: justify;  
+    box-shadow: 0.5em 0.5em 0.5em #0000004d;
+    margin-top:30px;
+} 
+label{
+    
+    margin-left:10px;
+    padding-right:40px;
+    display: inline-block;
+    margin: 4px;
+    text-align: left;
+}
+#l1{
+  padding-right:105px;
+}
+#l2{
+  padding-right:139px;
+}
+#l3{
+  padding-right:110px;
+}
+#l4{
+  padding-right:54px;
+}
+ /*End-register */
+
