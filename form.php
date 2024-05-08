@@ -8,12 +8,12 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-$pno = $_POST['pno'];
+// $pno = $_POST['pno'];
 $pname = $_POST['pname'];
 $age = $_POST['age'];
 $gender = $_POST['gender'];
 $paddress = $_POST['paddress'];
-$sql = "INSERT INTO employee (pno,pname,age,gender,paddress) VALUES ('$pno','$pname','$age','$gender','$paddress')";
+$sql = "INSERT INTO employee (pname,age,gender,paddress) VALUES ('$pname','$age','$gender','$paddress')";
     if ($conn->query($sql) === TRUE) {
         echo "User Saved <a href='./employee1.php'>View Here</a>";
     } else {

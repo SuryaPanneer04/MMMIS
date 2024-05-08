@@ -234,25 +234,24 @@ if (mysqli_num_rows($result) > 0) {
      echo "<table class='table table-striped table-hover'>";
        echo "<thead style='color: white !important;background-color: rgb(27, 26, 26) !important;'>";
         echo "<tr>";
+        echo "<th>No</th>";
         echo "<th>Username</th>";
         echo "<th>Email</th>";
         echo "<th>Usertype</th>";
         echo "<th>Password</th>";
-        echo "<th>Edit</th>";
         echo "<th>Delete</th>";
         echo "</tr>";
         echo "</thead>";
         echo "<tbody style='color: black !important;'>";
      while ($row = mysqli_fetch_assoc($result)) {
         echo "<tr>";
+        echo "<td>" . $row["no"] . "</td> ";
         echo "<td>" . $row["username"] . "</td> ";
         echo "<td>". $row["email"] . "</td>";
         echo "<td>". $row["usertype"] . "</td>";
-        echo "<td>". $row["password"] . "</td>";
-        echo "<td><a href='edit.php?id=" . $row['email'] . "' class='btn btn-primary'>Edit</a></td>";
-        
+        echo "<td>". $row["password"] . "</td>";        
         // Add a "Delete" button/link
-        echo "<td><a href='delete.php?id=" . $row['email'] . "' class='btn btn-danger'>Delete</a></td>";
+        echo "<td><a href='deleteBtnUser.php?id=" . $row['no'] . "' class='btn btn-danger'>Delete</a></td>";
         echo "</tr>";     
     }
     echo "</tbody>";

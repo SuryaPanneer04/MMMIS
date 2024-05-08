@@ -157,10 +157,10 @@
                                     <form accept="" method="post" action="productionform.php">
                                               <h5 class="modal-title" id="exampleModalLabel" style="color: black; text-align: center; font-size: 25px;">Add Production</h5>
                                               <div class="modal-body">
-                                                  <div class="">
+                                                  <!-- <div class="">
                                                       <label id="l1" style="color: black;">No</label>
                                                       <input type="text" name="pno" class="form-control" placeholder="Enter NO">
-                                                  </div>
+                                                  </div> -->
                                                   <div class="form">
                                                       <label id="l2" style="color: black;">EmpNo</label>
                                                       <input type="text" name="empno" class="form-control" placeholder="Enter empId">
@@ -247,7 +247,7 @@ if (mysqli_num_rows($result) > 0) {
         echo "<td><a href='editProduction.php?id=" . $row['pno'] . "' class='btn btn-primary'>Edit</a></td>";
         
         // Add a "Delete" button/link
-        echo "<td><a href='delete.php?id=" . $row['pno'] . "' class='btn btn-danger'>Delete</a></td>";
+        echo "<td><a href='deleteProduction.php?id=" . $row['pno'] . "' class='btn btn-danger'>Delete</a></td>";
         echo "</tr>";
     }
     echo "</tbody>";

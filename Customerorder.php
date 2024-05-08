@@ -166,7 +166,7 @@ if (mysqli_num_rows($result) > 0) {
      echo "<table class='table table-striped table-hover'>";
         echo "<thead style='color: white !important;background-color: rgb(27, 26, 26) !important;'>";
         echo "<tr>";
-        // echo "<th>No</th>";
+        echo "<th>No</th>";
         echo "<th>Customer Name</th>";
         echo "<th>Company Name</th>";
         echo "<th>Mobile NO</th>";
@@ -179,7 +179,7 @@ if (mysqli_num_rows($result) > 0) {
         echo "<tbody style='color: black !important;'>";
     while ($row = mysqli_fetch_assoc($result)) {
         echo "<tr>";
-        // echo "<td>" . $row["pno"] . "</td> ";
+        echo "<td>" . $row["pno"] . "</td> ";
         echo "<td>" . $row["customername"] . "</td> ";
         echo "<td>". $row["companyname"] . "</td>";
         echo "<td>". $row["mobileno"] . "</td>";

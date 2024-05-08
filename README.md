@@ -14,7 +14,7 @@
 
  created by and is maintained by **[Surya]**.
 * <https://twitter.com/suryapanneer097>
-* <https://github.com/SuryaPanneer04/mmmis>
+* <https://github.com/SuryaPanneer04/MMMIS>
 
 ## Copyright
 
